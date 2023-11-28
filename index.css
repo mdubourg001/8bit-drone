@@ -1,0 +1,20 @@
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+body * {
+  font-family: monospace;
+}
+
+@media screen and (max-width: 768px) {
+  .notes__grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .notes__grid {
+    grid-template-columns: repeat(17, minmax(0, 1fr));
+  }
+}
